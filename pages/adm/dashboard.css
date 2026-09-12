@@ -1,0 +1,39 @@
+.grade-estatisticas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-4);
+}
+@media (max-width: 760px) { .grade-estatisticas { grid-template-columns: 1fr; } }
+
+.cartao-estatistica {
+  padding: var(--espaco-5);
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-4);
+}
+.cartao-estatistica h2 { font-size: 1.8rem; color: var(--cor-azul-escuro); }
+.cartao-estatistica__icone {
+  width: 52px; height: 52px; border-radius: var(--raio-md);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; flex-shrink: 0;
+}
+.icone-azul { background: var(--cor-azul-claro); }
+.icone-menta { background: rgba(15, 252, 190, 0.22); }
+
+.grade-atalhos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-4);
+  margin-bottom: var(--espaco-6);
+}
+@media (max-width: 760px) { .grade-atalhos { grid-template-columns: 1fr; } }
+
+.cartao-atalho {
+  padding: var(--espaco-5);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform var(--transicao), box-shadow var(--transicao);
+}
+.cartao-atalho:hover { transform: translateY(-2px); box-shadow: var(--sombra-md); }
+.cartao-atalho h3 { color: var(--cor-texto); }

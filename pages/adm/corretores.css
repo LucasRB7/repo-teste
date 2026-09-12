@@ -1,0 +1,5 @@
+.linha-foto { display: flex; align-items: center; gap: var(--espaco-3); }
+.linha-foto .avatar { width: 52px; height: 52px; }
+.linha-foto input[type="file"] { flex: 1; }
+#corpo-tabela-corretores td { vertical-align: middle; }
+.spacer-topo { margin-bottom: var(--espaco-6); }
